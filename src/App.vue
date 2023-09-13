@@ -11,7 +11,7 @@ import PostList from "./views/HomeView.vue";
   <div>
     <Navbar/>
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <router-view></router-view>
+        <router-view :key="$route.fullPath"></router-view>
     </div>
   </div>
 
